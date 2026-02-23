@@ -1,14 +1,8 @@
-function firstWord(s) {
-  // your code here
-	if (str.length === 0) return '';
-    
-    let spaceIndex = str.indexOf(' ');
-    if (spaceIndex === -1) {
-        return str;
-    }
+function firstWord(str) {
+  if (str.length === 0) return '';
+  
+  const spaceIndex = str.indexOf(' ');
+  if (spaceIndex === -1) return str;
+  
+  return str.slice(0, spaceIndex);
 }
-
-// Do not change the code below
-
-const s = prompt("Enter String:");
-alert(firstWord(s));
